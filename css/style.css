@@ -517,7 +517,7 @@ h5 {
 
 h1,
 h2,
-h3 style="color:white;",
+h3,
 h4,
 h5,
 h6 {
@@ -553,4 +553,33 @@ textarea {
 	outline: none;
 	border: none;
 	resize: none;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #1f4667;
+  color: white;
+}
+.columnabout {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.containerabout {
+  padding: 0 16px;
+}
+
+.containerabout::after, .rowabout::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.titleabout {
+  color: grey;
 }
