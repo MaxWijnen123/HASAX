@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;
+    color:white;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cc9900;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  color: black;
+}
+
+input[type=submit] {
+  background-color: #cc9900;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+}
+
+input[type=submit]:hover {
+  background-color: #cc9900;
+}
+select {
+  color: black;
+}
+
+</style>
+<link rel="stylesheet" href="css/style.css"> 
+</head>
+<body> 
+        <section class="header2">    
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+<h4>CONTACT US</h4>
+
+<div class="container">
+  <form action="/action_page.php">
+    <font color="white">  
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your firstname..">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="country">Country</label>
+    <input type="text" id="country" name="country" placeholder="Your country..">
+    <label for="subject">Subject</label>
+    <textarea id="7127@pierson.nl" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit"> 
+    </font>
+  </form>
+</div>

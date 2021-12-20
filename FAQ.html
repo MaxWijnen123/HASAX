@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('Images/FAQ%20BG.jpg'); 
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head> 
+<body>
+
+<Center><h2> FREQUENTLY ASKED QUESTIONS </h2></Center>
+
+<button class="accordion">DELIVERY ?</button>
+<div class="panel">
+<p>Our delivery time is: 2-5 working days
+<br>
+<br>
+Prices:
+The shipping costs € 3.99
+Free shipping for orders over €59
+<br>
+<br>
+We also offer express delivery at check out:
+DHL Express: €14.99
+Express delivery: 1-2 business days
+</p>
+</div>
+
+<button class="accordion">EXCHANGE & RETURNS ?</button>
+<div class="panel">
+<p>How can I exchange/return my order?
+<br>
+<br> 
+If you want to return your order, it must be in new condition with all labels, stickers and labels still attached.
+<br>
+<br>
+I have sent my return, but I have not received a refund.
+<br>
+<br>
+After you have received a confirmation email of your return, it will take 2-5 working days until you receive your money back. If you have not received it within that time, please contact us via 7127@pierson.nl or 8428@pierson.nl</p>
+</div>
+
+<button class="accordion">Will COVID-19 affect my HASAX order ?</button>
+<div class="panel">
+  <p>It will not affect your order, we will ensure that the package is at your doorstep within 5 working days.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
