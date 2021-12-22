@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="../css/style.css"> 
+<section class="header2">
+        <nav>
+            <a href="index.html"><img src="../images/logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../shop.html">SHOP</a></li>
+                    <li><a href="../about.html">ABOUT</a></li>
+                    <li><a href="../Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+
+</section>
+<html>
+<head>
+<style>
+body {
+  background-image: url(../images/snow.jpg);
+  background-size: cover;
+}
+</style>
+
+</head>
+<body>
+<link rel="stylesheet" href="../css/product.css">
+<div class="card">
+  <img src="../images/product/Beanie7.png" alt="Beanie7" style="width:100%">
+  <h1>Red Beanie</h1>
+  <p class="price">€29.99</p> 
+  <p style="color: white;">Adjustable 
+<br>
+<br>
+Material:
+100% Cotton
+<style> 
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</p> 
+    <input type="button" value='Add to Cart' onclick='Shownewpage(this)' formtarget="_blank"/>
+</div>
+<script>
+function Shownewpage(btn){  
+        sessionStorage.HatBought='Red Beanie';
+        sessionStorage.Price = '€29.99';
+        sessionStorage.Image = './images/product/Beanie7.png';
+        window.open("../winkelwagen.html","_self")
+    }   
+</script>

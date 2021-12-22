@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Shopping Cart UI</title>
+	<link rel="stylesheet" type="text/css" href="css/winkelwagen.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet">
+</head>
+<style>
+body {
+  background-image: url('images/FAQ%20BG.jpg'); 
+  background-size: cover;
+}
+</style>
+<body>
+
+    <div class="CartContainer">
+   	   <div class="Header">
+   	   	<h3 class="Heading">Shopping Cart</h3>
+
+   	   </div>
+
+   	   <div class="Cart-Items">
+   	   	  <div class="image-box">
+            <img id="myImage" src="" style={{ height="120px" }}/>  
+   	   	  	
+   	   	  </div>
+   	   	  <div class="about">
+   	   	  	<h4 class="title"><span id="HatBought2"></span></h4>
+   	   	  </div>
+   	   	  <div class="counter">
+   	   	  	<div class="btn">+</div>
+   	   	  	<div class="count">1</div>
+   	   	  	<div class="btn">-</div>
+   	   	  </div>
+   	   	  <div class="prices">
+   	   	  	<div class="amount"><span id="Price2"></span></div>
+
+   	   	  </div>
+   	   </div>
+
+   	   
+   	 <hr> 
+   	 <div class="checkout">
+   	 <div class="total">
+   	 	<div>
+   	 		<div class="Subtotal">Sub-Total</div>
+            <div class="Subtotal">Shipping</div>
+            <div class="Subtotal">-------------------------</div> 
+            <div class="Subtotal">Total</div>         
+           
+   	    </div>
+   	 	<div>
+            <div class="Subtotal"><span id="PriceSubTotal"></span></div>
+            <div class="Subtotal">€&nbsp 3.99</div>
+             <div class="Subtotal">----------------</div> 
+            <div class="Subtotal">€ 33.98</div>    
+        </div>
+   	 </div>
+      <button class="button" onclick="location.href='shop.html'">Back to shop</button>  
+        </div>
+     
+   </div>
+</body>
+</html>
+<script type='text/javascript'>
+        document.getElementById("HatBought2").innerHTML = sessionStorage.getItem('HatBought');
+        document.getElementById("Price2").innerHTML = sessionStorage.getItem('Price');
+        document.getElementById("PriceSubTotal").innerHTML = sessionStorage.getItem('Price');
+        document.getElementById("myImage").src = sessionStorage.getItem('Image');
+        document.getElementById("PriceTotal").innerHTML = sessionStorage.getItem('Price')+3.99;
+</script> 
